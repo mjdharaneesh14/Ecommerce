@@ -2,18 +2,18 @@
 // DATA
 // ═══════════════════════════════════════
 const DEFAULT_PRODUCTS = [
-  { id: 1,  name: "Rose Hip Face Serum",    cat: "Skincare",   price: 849,  old: 1099, image: "images/rose_hip_serum.jpg", rating: 4.8, reviews: 124, badge: "sale", desc: "Brightening vitamin C serum with rosehip oil." },
-  { id: 2,  name: "Lavender Room Diffuser",  cat: "Home",       price: 699,             image: "images/lavender_diffuser.jpg", rating: 4.6, reviews: 89,  badge: "new",  desc: "Aromatherapy diffuser with lavender essential oil." },
-  { id: 3,  name: "Linen Tote Bag",          cat: "Fashion",    price: 499,             image: "images/linen_tote_bag.jpg", rating: 4.5, reviews: 67,               desc: "Handwoven organic linen tote, natural dye." },
-  { id: 4,  name: "Matcha Wellness Kit",     cat: "Wellness",   price: 1299, old: 1599, image: "images/matcha_kit.jpg", rating: 4.9, reviews: 203, badge: "sale", desc: "Ceremonial grade matcha + whisk + bowl set." },
-  { id: 5,  name: "Marble Pen Stand",        cat: "Stationery", price: 599,             image: "images/marble_pen_stand.jpg", rating: 4.4, reviews: 45,               desc: "Minimalist marble pen and desk organizer." },
-  { id: 6,  name: "Hyaluronic Moisturizer",  cat: "Skincare",   price: 999,             image: "images/hyaluronic_moisturizer.jpg", rating: 4.7, reviews: 156, badge: "new",  desc: "Deep hydration with hyaluronic acid & ceramides." },
-  { id: 7,  name: "Rattan Storage Basket",   cat: "Home",       price: 799,             image: "images/rattan_basket.jpg", rating: 4.3, reviews: 38,               desc: "Handwoven rattan basket for stylish storage." },
-  { id: 8,  name: "Silk Scrunchie Set",      cat: "Fashion",    price: 349,  old: 449,  image: "images/silk_scrunchie_set.jpg", rating: 4.6, reviews: 92,  badge: "sale", desc: "Set of 5 mulberry silk hair scrunchies." },
-  { id: 9,  name: "Crystal Roller",          cat: "Wellness",   price: 899,             image: "images/crystal_roller.jpg", rating: 4.8, reviews: 178,              desc: "Rose quartz face roller, reduces puffiness." },
-  { id: 10, name: "Leather Journal",         cat: "Stationery", price: 749,             image: "images/leather_journal.jpg", rating: 4.7, reviews: 61,  badge: "new",  desc: "A5 full-grain leather journal, 200 pages." },
-  { id: 11, name: "Vitamin C Eye Cream",     cat: "Skincare",   price: 649,             image: "images/vitamin_c_eye_cream.jpg", rating: 4.5, reviews: 84,               desc: "Brightening under-eye cream with retinol." },
-  { id: 12, name: "Scented Soy Candle",      cat: "Home",       price: 449,             image: "images/scented_soy_candle.jpg", rating: 4.9, reviews: 312, badge: "new",  desc: "Hand-poured soy candle, 40hr burn time." },
+  { id: 1,  name: "Rose Hip Face Serum",    cat: "Skincare",   price: 849,  old: 1099, image: "rose_hip_serum.jpg", rating: 4.8, reviews: 124, badge: "sale", desc: "Brightening vitamin C serum with rosehip oil." },
+  { id: 2,  name: "Lavender Room Diffuser",  cat: "Home",       price: 699,             image: "lavender_diffuser.jpg", rating: 4.6, reviews: 89,  badge: "new",  desc: "Aromatherapy diffuser with lavender essential oil." },
+  { id: 3,  name: "Linen Tote Bag",          cat: "Fashion",    price: 499,             image: "linen_tote_bag.jpg", rating: 4.5, reviews: 67,               desc: "Handwoven organic linen tote, natural dye." },
+  { id: 4,  name: "Matcha Wellness Kit",     cat: "Wellness",   price: 1299, old: 1599, image: "matcha_kit.jpg", rating: 4.9, reviews: 203, badge: "sale", desc: "Ceremonial grade matcha + whisk + bowl set." },
+  { id: 5,  name: "Marble Pen Stand",        cat: "Stationery", price: 599,             image: "marble_pen_stand.jpg", rating: 4.4, reviews: 45,               desc: "Minimalist marble pen and desk organizer." },
+  { id: 6,  name: "Hyaluronic Moisturizer",  cat: "Skincare",   price: 999,             image: "hyaluronic_moisturizer.jpg", rating: 4.7, reviews: 156, badge: "new",  desc: "Deep hydration with hyaluronic acid & ceramides." },
+  { id: 7,  name: "Rattan Storage Basket",   cat: "Home",       price: 799,             image: "rattan_basket.jpg", rating: 4.3, reviews: 38,               desc: "Handwoven rattan basket for stylish storage." },
+  { id: 8,  name: "Silk Scrunchie Set",      cat: "Fashion",    price: 349,  old: 449,  image: "silk_scrunchie_set.jpg", rating: 4.6, reviews: 92,  badge: "sale", desc: "Set of 5 mulberry silk hair scrunchies." },
+  { id: 9,  name: "Crystal Roller",          cat: "Wellness",   price: 899,             image: "crystal_roller.jpg", rating: 4.8, reviews: 178,              desc: "Rose quartz face roller, reduces puffiness." },
+  { id: 10, name: "Leather Journal",         cat: "Stationery", price: 749,             image: "leather_journal.jpg", rating: 4.7, reviews: 61,  badge: "new",  desc: "A5 full-grain leather journal, 200 pages." },
+  { id: 11, name: "Vitamin C Eye Cream",     cat: "Skincare",   price: 649,             image: "vitamin_c_eye_cream.jpg", rating: 4.5, reviews: 84,               desc: "Brightening under-eye cream with retinol." },
+  { id: 12, name: "Scented Soy Candle",      cat: "Home",       price: 449,             image: "scented_soy_candle.jpg", rating: 4.9, reviews: 312, badge: "new",  desc: "Hand-poured soy candle, 40hr burn time." },
 ];
 
 const DEFAULT_CATEGORIES = [...new Set(DEFAULT_PRODUCTS.map(p => p.cat))];
